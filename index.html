@@ -7,9 +7,7 @@
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -19,7 +17,10 @@
       <header>
         <h1>Simpleflatmapper</h1>
         <p>Fast and Easy mapping from database and csv to POJO. A lightweight alternative to iBatis and Hibernate.</p>
+
         <p class="view"><a href="https://github.com/arnaudroger/SimpleFlatMapper">View the Project on GitHub <small>arnaudroger/SimpleFlatMapper</small></a></p>
+
+
         <ul>
           <li><a href="https://github.com/arnaudroger/SimpleFlatMapper/zipball/master">Download <strong>ZIP File</strong></a></li>
           <li><a href="https://github.com/arnaudroger/SimpleFlatMapper/tarball/master">Download <strong>TAR Ball</strong></a></li>
@@ -27,62 +28,19 @@
         </ul>
       </header>
       <section>
-        <p><a href="https://travis-ci.org/arnaudroger/SimpleFlatMapper"><img src="https://travis-ci.org/arnaudroger/SimpleFlatMapper.svg?branch=master" alt="Build Status"></a>
-<a href="https://coveralls.io/r/arnaudroger/SimpleFlatMapper"><img src="https://img.shields.io/coveralls/arnaudroger/SimpleFlatMapper.svg" alt="Coverage Status"></a></p>
-
-<h1>
-<a id="simple-flat-mapper-sfm-v130" class="anchor" href="#simple-flat-mapper-sfm-v130" aria-hidden="true"><span class="octicon octicon-link"></span></a>Simple Flat Mapper (SFM) <a href="https://github.com/arnaudroger/SimpleFlatMapper/wiki/SimpleFlatMapper-v1.3.0">v1.3.0</a>
+        <h1>
+<a id="simple-flat-mapper-sfm-v150" class="anchor" href="#simple-flat-mapper-sfm-v150" aria-hidden="true"><span class="octicon octicon-link"></span></a>Simple Flat Mapper (SFM) <a href="https://github.com/arnaudroger/SimpleFlatMapper/wiki/SimpleFlatMapper-v1.5.0">v1.5.0</a>
 </h1>
 
-<p>SFM provides fast and easy to use mapper for</p>
+<p>SFM provides very fast and easy to use mapper for</p>
 
 <ul>
 <li><a href="https://github.com/arnaudroger/SimpleFlatMapper/wiki/JdbcMapper">ResultSet aka micro ORM</a></li>
-<li><a href="src/main/java/org/sfm/csv">Csv</a></li>
-<li><a href="src/main/java/org/sfm/jooq">Jooq</a></li>
-<li><a href="src/main/java/org/sfm/jdbc/spring">SpringJdbcTemplate</a></li>
-<li><a href="src/main/java/org/sfm/querydsl">QueryDSL</a></li>
+<li><a href="https://github.com/arnaudroger/SimpleFlatMapper/wiki/CsvParser">Csv</a></li>
+<li><a href="https://github.com/arnaudroger/SimpleFlatMapper/wiki/Jooq-Integration">Jooq</a></li>
+<li><a href="https://github.com/arnaudroger/SimpleFlatMapper/tree/master/src/main/java/org/sfm/jdbc/spring">SpringJdbcTemplate</a></li>
+<li><a href="https://github.com/arnaudroger/SimpleFlatMapper/tree/master/src/main/java/org/sfm/querydsl">QueryDSL</a></li>
 </ul>
-
-<p>It also provides one of the fastest <a href="https://github.com/arnaudroger/SimpleFlatMapper/wiki/CsvParser">csv parser</a> available <a href="https://github.com/arnaudroger/csv-parsers-comparison">See CsvParserComparaison fork</a>.</p>
-
-<p>The API is lambda friendly and the java 8 jars expose the mapped in form of Stream.</p>
-
-<h2>
-<a id="why" class="anchor" href="#why" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why?</h2>
-
-<p>SFM focuses on simplicity of use and performance. Current ORM Mapping solution are intrusive and/or quite slow -
-can easily double your retrieval time in prod like setups, and Hibernate cache won't save you either because it
-still needs to inflate the object from a tuple.</p>
-
-<p>SFM is a library and does not force a framework on you it plugs on top of jdbc, jooq, java io, spring jdbc.</p>
-
-<p>SFM makes also the assumption that it should be able to figure out the mapping rule without you being explicit about it.
-Object will most of the time match the structure of a query or a csv. But it still allow you to customized the mapping
-definition. <a href="https://github.com/arnaudroger/SimpleFlatMapper/wiki/Property-Mapping">More details.</a></p>
-
-<p>SFM also supports Constructor injection and respect the semantic of final fields.</p>
-
-<p><a href="https://github.com/arnaudroger/SimpleFlatMapper/wiki/Why-extended-version">More storyfied Why.</a></p>
-
-<h2>
-<a id="how-fast" class="anchor" href="#how-fast" aria-hidden="true"><span class="octicon octicon-link"></span></a>How Fast?</h2>
-
-<p>The Jdbc Mapper is the fastest on the market. Adding a maximum of 5% over pure jdbc on a query to a local Mysql. The next
-fastest would be Roma that add between 10 and 15%. MyBatis and Hibernate adds more that 70% climbing quickly to 150%
-for bigger queries.</p>
-
-<p>The Csv Mapper is about 30% faster than jackson-csv.</p>
-
-<p>The Jooq integration give you a mapping to object for almost no cost.</p>
-
-<p><a href="https://github.com/arnaudroger/SimpleFlatMapper/wiki/Performance-Java-7">More details.</a></p>
-
-<h2>
-<a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting Started</h2>
-
-<h3>
-<a id="binaries" class="anchor" href="#binaries" aria-hidden="true"><span class="octicon octicon-link"></span></a>Binaries</h3>
 
 <p>The binaries are available in maven central. There is a build for</p>
 
@@ -114,62 +72,23 @@ for bigger queries.</p>
             &lt;<span class="pl-ent">version</span>&gt;1.3.0&lt;/<span class="pl-ent">version</span>&gt;
             &lt;<span class="pl-ent">classifier</span>&gt;jdk16&lt;/<span class="pl-ent">classifier</span>&gt;
         &lt;/<span class="pl-ent">dependency</span>&gt;</pre></div>
-
-<h3>
-<a id="quick-samples" class="anchor" href="#quick-samples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quick Samples</h3>
-
-<p>The mapper are all thread safe, and it is recommended to instantiate one per class to map as most of the work is done on
-instantiation.</p>
-
-<p>Those samples show how to build a list from the forEach method. These is not the recommended way of processing the
-stream of data. As much as you can you would need to define your own RowHandler and do the work in there.</p>
-
-<h4>
-<a id="jdbc" class="anchor" href="#jdbc" aria-hidden="true"><span class="octicon octicon-link"></span></a>Jdbc</h4>
-
-<div class="highlight highlight-java"><pre><span class="pl-s">public</span> <span class="pl-s">class</span> <span class="pl-en">MyDao</span> {
-    <span class="pl-st">JdbcMapper&lt;<span class="pl-stj">MyObject</span>&gt;</span> mapper <span class="pl-k">=</span> JdbcMapperFactory.<span class="pl-en">newInstance</span>().<span class="pl-en">newMapper</span>(<span class="pl-stj">MyObject</span>.<span class="pl-v">class</span>);
-
-    <span class="pl-s">public</span> <span class="pl-st">List&lt;<span class="pl-stj">MyObject</span>&gt;</span> <span class="pl-en">findAll</span>() <span class="pl-s">throws</span> <span class="pl-stj">SQLException</span> {
-        <span class="pl-k">try</span> (<span class="pl-stj">Connection</span> conn <span class="pl-k">=</span> getConnection();
-             <span class="pl-stj">PreparedStatement</span> ps <span class="pl-k">=</span> conn<span class="pl-k">.</span>prepareStatement(<span class="pl-s1"><span class="pl-pds">"</span>select * from my_table<span class="pl-pds">"</span></span>);
-             <span class="pl-stj">ResultSet</span> rs <span class="pl-k">=</span> ps<span class="pl-k">.</span>executeQuery();) {
-            <span class="pl-k">return</span> mapper<span class="pl-k">.</span>forEach(rs, <span class="pl-k">new</span> <span class="pl-st">ListHandler&lt;<span class="pl-stj">MyObject</span>&gt;</span>())<span class="pl-k">.</span>getList();
-        }
-    }
-
-}</pre></div>
-
-<h4>
-<a id="csv" class="anchor" href="#csv" aria-hidden="true"><span class="octicon octicon-link"></span></a>Csv</h4>
-
-<div class="highlight highlight-java"><pre><span class="pl-s">public</span> <span class="pl-s">class</span> <span class="pl-en">MyDao</span> {
-    <span class="pl-st">CsvMapper&lt;<span class="pl-stj">MyObject</span>&gt;</span> mapper <span class="pl-k">=</span> CsvMapperFactory.<span class="pl-en">newInstance</span>().<span class="pl-en">newMapper</span>(<span class="pl-stj">MyObject</span>.<span class="pl-v">class</span>);
-
-    <span class="pl-s">public</span> <span class="pl-st">List&lt;<span class="pl-stj">MyObject</span>&gt;</span> <span class="pl-en">findAll</span>(<span class="pl-stj">File</span> <span class="pl-v">file</span>) <span class="pl-s">throws</span> <span class="pl-stj">SQLException</span> {
-        <span class="pl-k">try</span> (<span class="pl-stj">FileReader</span> reader <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-stj">FileReader</span>(file)) {
-            <span class="pl-k">return</span> mapper<span class="pl-k">.</span>forEach(reader, <span class="pl-k">new</span> <span class="pl-st">ListHandler&lt;<span class="pl-stj">MyObject</span>&gt;</span>())<span class="pl-k">.</span>getList();
-        }
-    }
-
-}</pre></div>
-
-<h3>
-<a id="building-it" class="anchor" href="#building-it" aria-hidden="true"><span class="octicon octicon-link"></span></a>Building it</h3>
-
-<p>The build is using <a href="http://maven.apache.org/">Maven</a>.</p>
-
-<pre><code>git clone https://github.com/arnaudroger/SimpleFlatMapper.git
-cd SimpleFlatMapper
-mvn install
-</code></pre>
       </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/arnaudroger">arnaudroger</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
     </div>
-    <footer>
-      <p>Project maintained by <a href="https://github.com/arnaudroger">arnaudroger</a></p>
-      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
-    </footer>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-59470416-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
   </body>
 </html>
