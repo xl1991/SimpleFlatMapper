@@ -15,10 +15,10 @@
 -docencoding
 'UTF-8'
 -doctitle
-'SimpleFlatMapper 1.5.0 API'
+'SimpleFlatMapper 1.5.1 API'
 -linkoffline
 'http://docs.oracle.com/javase/8/docs/api' '/Users/e19224/development/github/SimpleFlatMapper/target/javadoc-bundle-options'
 -use
 -version
 -windowtitle
-'SimpleFlatMapper 1.5.0 API'
+'SimpleFlatMapper 1.5.1 API'
