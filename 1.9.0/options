@@ -1,0 +1,28 @@
+-classpath
+'/Users/e19224/.m2/repository/org/ow2/asm/asm-all/5.0.4/asm-all-5.0.4.jar:/Users/e19224/.m2/repository/org/springframework/spring-beans/4.1.6.RELEASE/spring-beans-4.1.6.RELEASE.jar:/Users/e19224/.m2/repository/joda-time/joda-time/2.7/joda-time-2.7.jar:/Users/e19224/.m2/repository/org/sql2o/sql2o/1.5.4/sql2o-1.5.4.jar:/Users/e19224/.m2/repository/com/infradna/tool/bridge-method-annotation/1.13/bridge-method-annotation-1.13.jar:/Users/e19224/.m2/repository/org/jooq/jool/0.9.6/jool-0.9.6.jar:/Users/e19224/.m2/repository/org/springframework/spring-tx/4.1.6.RELEASE/spring-tx-4.1.6.RELEASE.jar:/Users/e19224/.m2/repository/org/osgi/org.osgi.core/6.0.0/org.osgi.core-6.0.0.jar:/Users/e19224/.m2/repository/org/jooq/jooq/3.6.1/jooq-3.6.1.jar:/Users/e19224/.m2/repository/com/mysema/querydsl/querydsl-sql/3.6.3/querydsl-sql-3.6.3.jar:/Users/e19224/.m2/repository/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar:/Users/e19224/.m2/repository/org/codehaus/janino/commons-compiler/2.7.4/commons-compiler-2.7.4.jar:/Users/e19224/.m2/repository/com/google/guava/guava/17.0/guava-17.0.jar:/Users/e19224/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/e19224/.m2/repository/org/eclipse/persistence/javax.persistence/2.1.0/javax.persistence-2.1.0.jar:/Users/e19224/.m2/repository/org/apache/poi/poi/3.12/poi-3.12.jar:/Users/e19224/.m2/repository/org/apache/servicemix/bundles/org.apache.servicemix.bundles.javax-inject/1_2/org.apache.servicemix.bundles.javax-inject-1_2.jar:/Users/e19224/.m2/repository/org/codehaus/janino/janino/2.7.4/janino-2.7.4.jar:/Users/e19224/.m2/repository/org/springframework/spring-jdbc/4.1.6.RELEASE/spring-jdbc-4.1.6.RELEASE.jar:/Users/e19224/.m2/repository/com/mysema/querydsl/querydsl-core/3.6.3/querydsl-core-3.6.3.jar:/Users/e19224/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/e19224/.m2/repository/com/mysema/commons/mysema-commons-lang/0.2.4/mysema-commons-lang-0.2.4.jar:/Users/e19224/.m2/repository/com/boundary/fasttuple-core/0.1/fasttuple-core-0.1.jar:/Users/e19224/.m2/repository/org/springframework/spring-core/4.1.6.RELEASE/spring-core-4.1.6.RELEASE.jar:/Users/e19224/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/e19224/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar'
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'/Users/e19224/development/github/SimpleFlatMapper/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2015. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/Users/e19224/development/github/SimpleFlatMapper/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'SimpleFlatMapper 1.9.0 API'
+-footer
+'<script type="text/javascript"> var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src=\'" + gaJsHost + "google-analytics.com/ga.js\' type=\'text/javascript\'%3E%3C/script%3E")); </script> <script type="text/javascript"> try {     var pageTracker = _gat._getTracker("UA-59470416-1");     pageTracker._trackPageview(); } catch(err) {} </script>'
+-header
+'<a href="http://www.simpleflatmapper.org">SimpleFlatMapper</a> hosted on <a href="https://github.com/arnaudroger/SimpleFlatMapper">GitHub</a>'
+-linkoffline
+'http://docs.oracle.com/javase/8/docs/api' '/Users/e19224/development/github/SimpleFlatMapper/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'SimpleFlatMapper 1.9.0 API'
