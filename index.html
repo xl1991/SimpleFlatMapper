@@ -47,9 +47,15 @@
 <ul>
 <li><a href="https://github.com/arnaudroger/SimpleFlatMapper/wiki/JdbcMapper">Micro ORM</a></li>
 <li><a href="https://github.com/arnaudroger/SimpleFlatMapper/wiki/CsvParser">Csv Mapper and Parser</a></li>
-<li><a href="https://github.com/arnaudroger/SimpleFlatMapper/wiki/SFM-Integration-in-Jooq">Jooq Record Mapper</a></li>
-<li><a href="https://github.com/arnaudroger/SimpleFlatMapper/tree/master/src/main/java/org/sfm/jdbc/spring">Spring JdbcTemplate integration</a></li>
-<li><a href="https://github.com/arnaudroger/SimpleFlatMapper/tree/master/src/main/java/org/sfm/querydsl">QueryDSL</a></li>
+</ul>
+<p>It also has modules to provide integration with </p>
+<ul>
+<li><a href="https://github.com/arnaudroger/SimpleFlatMapper/blob/master/sfm-datastax">Cassandra Datastax</a></li>
+<li><a href="https://github.com/arnaudroger/SimpleFlatMapper/blob/master/sfm-jooq">jOOQ</a></li>
+<li><a href="https://github.com/arnaudroger/SimpleFlatMapper/blob/master/sfm-poi">POI Excel Spreadsheet</a></li>
+<li><a href="https://github.com/arnaudroger/SimpleFlatMapper/blob/master/sfm-querydsl">Query DSL</a></li>
+<li><a href="https://github.com/arnaudroger/SimpleFlatMapper/blob/master/sfm-springjdbc">Spring Jdbc</a></li>
+<li><a href="https://github.com/arnaudroger/SimpleFlatMapper/blob/master/sfm-sql2o">Sql2o</a></li>
 </ul>
 
 <p>The binaries are available in maven central. There is a build for</p>
@@ -59,7 +65,7 @@
 
 <div class="highlight highlight-xml"><pre>        &lt;<span class="pl-ent">dependency</span>&gt;
             &lt;<span class="pl-ent">groupId</span>&gt;org.simpleflatmapper&lt;/<span class="pl-ent">groupId</span>&gt;
-            &lt;<span class="pl-ent">artifactId</span>&gt;simpleFlatMapper&lt;/<span class="pl-ent">artifactId</span>&gt;
+            &lt;<span class="pl-ent">artifactId</span>&gt;sfm&lt;/<span class="pl-ent">artifactId</span>&gt;
             &lt;<span class="pl-ent">version</span>&gt;2.2&lt;/<span class="pl-ent">version</span>&gt;
         &lt;/<span class="pl-ent">dependency</span>&gt;</pre></div>
 
@@ -68,7 +74,7 @@
 
 <div class="highlight highlight-xml"><pre>        &lt;<span class="pl-ent">dependency</span>&gt;
             &lt;<span class="pl-ent">groupId</span>&gt;org.simpleflatmapper&lt;/<span class="pl-ent">groupId</span>&gt;
-            &lt;<span class="pl-ent">artifactId</span>&gt;simpleFlatMapper&lt;/<span class="pl-ent">artifactId</span>&gt;
+            &lt;<span class="pl-ent">artifactId</span>&gt;sfm&lt;/<span class="pl-ent">artifactId</span>&gt;
             &lt;<span class="pl-ent">version</span>&gt;2.2&lt;/<span class="pl-ent">version</span>&gt;
             &lt;<span class="pl-ent">classifier</span>&gt;jdk17&lt;/<span class="pl-ent">classifier</span>&gt;
         &lt;/<span class="pl-ent">dependency</span>&gt;</pre></div>
@@ -78,7 +84,7 @@
 
 <div class="highlight highlight-xml"><pre>        &lt;<span class="pl-ent">dependency</span>&gt;
             &lt;<span class="pl-ent">groupId</span>&gt;org.simpleflatmapper&lt;/<span class="pl-ent">groupId</span>&gt;
-            &lt;<span class="pl-ent">artifactId</span>&gt;simpleFlatMapper&lt;/<span class="pl-ent">artifactId</span>&gt;
+            &lt;<span class="pl-ent">artifactId</span>&gt;sfm&lt;/<span class="pl-ent">artifactId</span>&gt;
             &lt;<span class="pl-ent">version</span>&gt;2.2&lt;/<span class="pl-ent">version</span>&gt;
             &lt;<span class="pl-ent">classifier</span>&gt;jdk16&lt;/<span class="pl-ent">classifier</span>&gt;
         &lt;/<span class="pl-ent">dependency</span>&gt;</pre></div>
