@@ -13,14 +13,25 @@ import java.util.List;
 public class CsvParserBenchmark {
 
     /**
-     * Benchmark                     Mode  Cnt    Score   Error  Units
-     CsvParserBenchmark.parse      avgt   20  173.738 ± 2.790  ns/op
-     CsvParserBenchmark.parseTrim  avgt   20  241.522 ± 5.823  ns/op
+     Benchmark                      Mode  Cnt    Score   Error  Units
+     CsvParserBenchmark.parse       avgt   20  479.269 ± 1.984  ns/op
+     CsvParserBenchmark.parseQuote  avgt   20  951.399 ± 5.064  ns/op
+     CsvParserBenchmark.parseTrim   avgt   20  756.353 ± 2.033  ns/op
+     Benchmark                      Mode  Cnt    Score   Error  Units
+     CsvParserBenchmark.parse       avgt   20  469.553 ± 1.793  ns/op
+     CsvParserBenchmark.parseQuote  avgt   20  996.914 ± 3.604  ns/op
+     CsvParserBenchmark.parseTrim   avgt   20  736.330 ± 2.716  ns/op
+
+     Benchmark                      Mode  Cnt    Score   Error  Units
+     CsvParserBenchmark.parse       avgt   20  453.102 ± 1.281  ns/op
+     CsvParserBenchmark.parseQuote  avgt   20  856.279 ± 3.323  ns/op
+     CsvParserBenchmark.parseTrim   avgt   20  775.451 ± 2.041  ns/op
 
 
-     Benchmark                     Mode  Cnt    Score   Error  Units
-     CsvParserBenchmark.parse      avgt   20  161.341 ± 0.519  ns/op
-     CsvParserBenchmark.parseTrim  avgt   20  235.243 ± 1.048  ns/op
+     Benchmark                      Mode  Cnt    Score   Error  Units
+     CsvParserBenchmark.parse       avgt   20  428.510 ± 1.684  ns/op
+     CsvParserBenchmark.parseQuote  avgt   20  866.024 ± 2.639  ns/op
+     CsvParserBenchmark.parseTrim   avgt   20  778.768 ± 1.860  ns/op
 
 
      */
