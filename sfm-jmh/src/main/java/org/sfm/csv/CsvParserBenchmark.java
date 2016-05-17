@@ -24,7 +24,8 @@ public class CsvParserBenchmark {
 
 
      */
-    public String csv = "val,val2  sdssddsds,lllll llll,sdkokokokokads<>Sddsdsds,adsdsadsad,1,3,4";
+    public String csv = "val,val2  sdssddsds,lllll llll,sdkokokokokads<>Sddsdsds, adsdsadsad ,1, 3 ,4";
+    public String csvQuote = "\"val\",\"val2  sdssddsds\",\"lllll llll\",\"sdkokokokokads<>Sddsdsds\",\"adsdsadsad\",\"1\",\"3\",\"4\"";
 
 
     public static final CsvParser.DSL dsl = CsvParser.dsl();
@@ -41,6 +42,16 @@ public class CsvParserBenchmark {
         tdsl.parse(csv, new MyCellConsumer(blackhole));
     }
 
+    @Benchmark
+    public void parseQuote(Blackhole blackhole) throws IOException {
+        dsl.parse(csvQuote, new MyCellConsumer(blackhole));
+    }
+
+    public static void main(String[] args) throws IOException {
+        new CsvParserBenchmark().parseQuote(null);
+    }
+
+
     private static class MyCellConsumer implements CellConsumer {
         private final Blackhole blackhole;
 
@@ -50,9 +61,11 @@ public class CsvParserBenchmark {
 
         @Override
         public void newCell(char[] chars, int offset, int length) {
-            blackhole.consume(chars);
-            blackhole.consume(offset);
-            blackhole.consume(length);
+            if (blackhole != null) {
+                blackhole.consume(chars);
+                blackhole.consume(offset);
+                blackhole.consume(length);
+            }
         }
 
         @Override
